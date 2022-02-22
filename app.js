@@ -27,4 +27,6 @@ app.use((err, req, res, next) => {
     message: err.message || "Internal Server Error",
   });
 });
-app.listen(5000);
+app.listen(5000, () => {
+  console.log(`Listening to port 5000`)
+});
